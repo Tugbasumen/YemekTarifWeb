@@ -28,8 +28,9 @@ class RecipeDetailCard extends StatelessWidget {
       child: SingleChildScrollView(
         child: SizedBox(
           width: 800,
-          height: 1200,
+          height: 1600,
           child: Card(
+            color: Colors.amber[50],
             elevation: 6,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),

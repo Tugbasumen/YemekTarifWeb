@@ -14,8 +14,16 @@ class RecipeDetailScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final recipeState = ref.watch(recipeViewModelProvider);
 
-    return Scaffold(
-      body: AppView(
+    return AppView(
+      child: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              'assets/images/arkaplan2.jpg',
+            ), // Arka plan resminizin yolu
+            fit: BoxFit.fill, // Resmin boyutlandırma şekli
+          ),
+        ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: LoadingView(
