@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:yemek1/view/screens/category_screen.dart';
 import 'package:yemek1/view/screens/home_screen.dart';
 import 'package:yemek1/view/screens/recipe_detail_screen.dart';
 
 class AppRoutes {
   static const String home = '/';
   static const String recipeDetail = '/recipe_detail/:id';
+  static const String category = '/category';
 }
 
 final router = GoRouter(
@@ -20,6 +22,10 @@ final router = GoRouter(
         final id = state.pathParameters['id']!; // ID parametresini al
         return RecipeDetailScreen(recipeId: id); // ID'yi ekrana gönder
       },
+    ),
+    GoRoute(
+      path: AppRoutes.category,
+      builder: (context, state) => const CategoryScreen(), // ✅
     ),
   ],
   errorBuilder: (context, state) => Scaffold(
