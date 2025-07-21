@@ -16,7 +16,7 @@ class CategoryApi {
       if (kategoriler == null) return [];
       return kategoriler.map((json) => CategoryModel.fromJson(json)).toList();
     } else {
-      throw Exception('Kategoriler alınamadı');
+      throw Exception('Categories could not be retrieved');
     }
   }
 }

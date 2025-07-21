@@ -35,7 +35,6 @@ class RecipeDetailCard extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            margin: const EdgeInsets.all(12),
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
