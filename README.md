@@ -1,16 +1,17 @@
-# yemek1
+🍽️ Yemek Tarifleri Uygulaması
 
-A new Flutter project.
+API’den veri çekilerek hazırlanmış yemek tarifi web sitesi
+Kullanıcılar farklı yemek tariflerini görüntüleyebilir ve detaylarını inceleyebilir.
 
-## Getting Started
+🚀 Özellikler
 
-This project is a starting point for a Flutter application.
+* Güncel yemek tariflerini API üzerinden çekme
+* Tariflerin detay sayfası (malzemeler, yapılış adımları, resimler, Youtube link)
+* Modern Flutter tasarımı
 
-A few resources to get you started if this is your first Flutter project:
+ 🛠 Kullanılan Teknolojiler
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Flutter
+* Dart
+* REST API
+* Riverpod (State Management)
