@@ -34,7 +34,7 @@ class AppView extends StatelessWidget {
           Icon(Icons.home),
           TextButton(
             onPressed: () {
-              context.go(AppRoutes.home); // GoRouter ile yönlendirme
+              context.go(AppRoutes.home);
             },
             child: const Text(
               "Home",
@@ -61,7 +61,7 @@ class AppView extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(width: 15), // Sağdan biraz boşluk
+          const SizedBox(width: 15),
         ],
       ),
       body: child,

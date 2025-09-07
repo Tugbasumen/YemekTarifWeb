@@ -12,7 +12,7 @@ class RecipeRepository {
 
   //kategoriye göre yemek
   Future<List<RecipeModel>> getRecipesByCategory(String category) {
-    return api.getRecipesByCategory(category);
+    return api.getRecipesByCategory(category); // API'ye sorar, döner
   }
 
   // id ye göre yemek
